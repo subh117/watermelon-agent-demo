@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "watermelon-github-agent"
+version = "1.0.0"
+description = "Autonomous Platform Intelligence Agent for GitHub, built for the Watermelon AI Engineer recruitment assignment."
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.1",
+    "pydantic>=2.7.0",
+    "rich>=13.7.0"
+]
+
+[project.scripts]
+wg-agent = "github_agent.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
