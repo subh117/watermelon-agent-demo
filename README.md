@@ -153,13 +153,3 @@ Every run creates a structured report with:
 
 If a step fails, the agent reports the partial state. It does not silently claim success.
 
-## Suggested 15-minute walkthrough flow
-
-1. Explain the architecture using `ARCHITECTURE.md`.
-2. Run `wg-agent memory` to show no synthesized search capability yet.
-3. Run Instruction 1 to show basic GitHub execution.
-4. Run Instruction 2 to show synthesis and memory mutation.
-5. Run `wg-agent memory` again and point to `github.search_issues`.
-6. Run Instruction 3 to show reuse and fewer API calls.
-7. Run `wg-agent stats` to show the measurable improvement.
-8. Open GitHub and show the created issues.
